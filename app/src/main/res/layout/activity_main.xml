@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEBEBE"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="405dp"
+        android:layout_height="494dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bwlions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonsearch" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="289dp"
+        android:layout_height="254dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="120dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsearch" />
+
+    <EditText
+        android:id="@+id/serachtext"
+        style="?android:attr/textViewStyle"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="Search for..."
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/copyrightTextView"
+        android:layout_width="211dp"
+        android:layout_height="38dp"
+        android:layout_gravity="bottom|center"
+
+        android:layout_marginTop="97dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:clickable="true"
+        android:text="©2024 Ayesha Samreen"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="Clear Button"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonsearch"
+        style="?android:attr/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#00008B"
+        android:text="Search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serachtext" />
+
+    <Button
+        android:id="@+id/buttonrandom"
+        style="?android:attr/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#00008B"
+        android:text="Random"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serachtext" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="410dp"
+        android:layout_height="487dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsearch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

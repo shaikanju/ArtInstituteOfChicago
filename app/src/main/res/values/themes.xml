@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with custom font applied -->
+    <style name="Base.Theme.ArtInstituteofChicago" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ArtInstituteofChicago" parent="Base.Theme.ArtInstituteofChicago">
+        <!-- Apply custom font to all TextView components -->
+        <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
+    </style>
+
+    <!-- Custom TextView style with the custom font -->
+    <style name="CustomTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/worksans_regular</item>
+    </style>
+</resources>
